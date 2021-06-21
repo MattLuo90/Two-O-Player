@@ -27,7 +27,7 @@ class Game
   def begin_game
     @player_1.ask_question
     check_winner
-    setTimeout(status, 2000)
+    status
     puts "----- NEW TURN -----"
     @player_2.ask_question
     check_winner

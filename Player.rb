@@ -16,8 +16,8 @@ class Player
     question = Questions.new
     question.random_question(@name)
     print '> '
-    player_answer = $stdin.gets.chomp
-    if question.validate(player_answer.to_i)
+    player_answer = gets.chomp
+    if question.validate(player_answer)
       puts 'Yes! You are correct.'
     else
       puts 'Seriously? No!'
